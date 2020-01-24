@@ -29,7 +29,7 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
       {people.map((item, index )=> {
         // console.log(item);
-        return <DataFrame data={item} index={index}/>;
+        return <DataFrame data={item} key={index}/>;
       })}
     </div>
   );
